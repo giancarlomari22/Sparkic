@@ -3,7 +3,7 @@ import { PageHeader } from "@/components/page-header";
 import { ValuesSection } from "@/components/values-section";
 
 export const metadata: Metadata = {
-  title: "About Us  Spark Adriatic",
+  title: "About Us | Spark Adriatic",
   description: "Learn more about Spark Adriatic and the team behind it.",
 };
 
