@@ -1,12 +1,12 @@
 "use client";
 
 import { useState } from "react";
+import { toast } from "sonner";
 import { contactSchema, type ContactSchema } from "@/app/types";
 
 type FieldErrors = Partial<Record<keyof ContactSchema, string>>;
 
 export function ContactForm() {
-  const [sent, setSent] = useState(false);
   const [errors, setErrors] = useState<FieldErrors>({});
 
   function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
@@ -33,22 +33,9 @@ export function ContactForm() {
       return;
     }
 
+    e.currentTarget.reset();
     setErrors({});
-    setSent(true);
-  }
-
-  if (sent) {
-    return (
-      <section className="bg-slate-50">
-        <div className="mx-auto max-w-3xl px-6 py-20 text-center">
-          <h2 className="text-2xl font-bold text-slate-900">Message sent!</h2>
-          <p className="mt-4 text-slate-600">
-            Thanks for reaching out. We&apos;ll get back to you within 48
-            hours.
-          </p>
-        </div>
-      </section>
-    );
+    toast.success("Message sent! We'll get back to you within 48 hours.");
   }
 
   return (
