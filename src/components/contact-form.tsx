@@ -58,7 +58,7 @@ export function ContactForm() {
               name="name"
               type="text"
               placeholder="Your name"
-              className="mt-1 w-full rounded-md border border-slate-600 bg-[#141829] px-4 py-2 text-white placeholder:text-slate-500 focus:border-teal-400 focus:outline-none"
+              className="mt-1 w-full rounded-md border border-slate-600 bg-[#141829] px-4 py-2 text-white placeholder:text-slate-500 focus:border-[#98D9EB] focus:outline-none"
             />
             {errors.name && (
               <p className="mt-1 text-sm text-red-400">{errors.name}</p>
@@ -77,7 +77,7 @@ export function ContactForm() {
               name="email"
               type="email"
               placeholder="your@email.com"
-              className="mt-1 w-full rounded-md border border-slate-600 bg-[#141829] px-4 py-2 text-white placeholder:text-slate-500 focus:border-teal-400 focus:outline-none"
+              className="mt-1 w-full rounded-md border border-slate-600 bg-[#141829] px-4 py-2 text-white placeholder:text-slate-500 focus:border-[#98D9EB] focus:outline-none"
             />
             {errors.email && (
               <p className="mt-1 text-sm text-red-400">{errors.email}</p>
@@ -96,7 +96,7 @@ export function ContactForm() {
               name="message"
               rows={5}
               placeholder="Tell us about your project..."
-              className="mt-1 w-full rounded-md border border-slate-600 bg-[#141829] px-4 py-2 text-white placeholder:text-slate-500 focus:border-teal-400 focus:outline-none"
+              className="mt-1 w-full rounded-md border border-slate-600 bg-[#141829] px-4 py-2 text-white placeholder:text-slate-500 focus:border-[#98D9EB] focus:outline-none"
             />
             {errors.message && (
               <p className="mt-1 text-sm text-red-400">{errors.message}</p>
@@ -105,7 +105,7 @@ export function ContactForm() {
 
           <button
             type="submit"
-            className="w-full rounded-md bg-teal-500 py-3 text-base font-semibold text-white transition-colors hover:bg-teal-600"
+            className="w-full rounded-md bg-[#98D9EB] py-3 text-base font-semibold text-slate-900 transition-colors hover:bg-[#7fd4e8]"
           >
             Send Message
           </button>

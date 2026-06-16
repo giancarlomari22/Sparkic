@@ -16,7 +16,7 @@ export function AboutSection() {
           </p>
           <Link
             href="/about"
-            className="mt-4 inline-block font-semibold text-teal-400 hover:text-teal-300"
+            className="mt-4 inline-block font-semibold text-[#98D9EB] hover:text-[#b8e5f3]"
           >
             Learn more about us →
           </Link>

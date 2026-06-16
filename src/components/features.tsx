@@ -39,7 +39,7 @@ export function Features() {
               key={feature.number}
               className="rounded-lg border border-slate-700 p-6"
             >
-              <span className="text-2xl font-bold text-teal-400">
+              <span className="text-2xl font-bold text-[#98D9EB]">
                 {feature.number}
               </span>
               <h3 className="mt-4 text-lg font-semibold text-white">

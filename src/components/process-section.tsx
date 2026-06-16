@@ -36,7 +36,7 @@ export function ProcessSection() {
         <div className="mt-12 grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-4">
           {steps.map((step) => (
             <div key={step.number}>
-              <span className="text-2xl font-bold text-teal-400">
+              <span className="text-2xl font-bold text-[#98D9EB]">
                 {step.number}
               </span>
               <h3 className="mt-4 text-lg font-semibold text-white">

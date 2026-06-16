@@ -26,7 +26,7 @@ export function ContactInfo() {
             <ol className="mt-4 space-y-4">
               {steps.map((item) => (
                 <li key={item.step} className="flex gap-4">
-                  <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-teal-500 text-sm font-bold text-white">
+                  <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-[#98D9EB] text-sm font-bold text-slate-900">
                     {item.step}
                   </span>
                   <p className="pt-1 text-slate-400">{item.text}</p>

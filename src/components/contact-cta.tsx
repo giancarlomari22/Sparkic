@@ -14,7 +14,7 @@ export function ContactCta() {
         <div className="mt-8">
           <Link
             href="/contact"
-            className="rounded-md bg-teal-500 px-6 py-3 text-base font-semibold text-white transition-colors hover:bg-teal-600"
+            className="rounded-md bg-[#98D9EB] px-6 py-3 text-base font-semibold text-slate-900 transition-colors hover:bg-[#7fd4e8]"
           >
             Contact Us
           </Link>
