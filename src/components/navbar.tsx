@@ -17,14 +17,15 @@ export function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <header className="bg-slate-900 text-white">
+    <header className="bg-[#070b14] text-white">
       <nav className="mx-auto flex max-w-6xl items-center justify-between gap-6 px-6 py-4">
-        <Link
-          href="/"
-          className="text-xl font-bold"
-          onClick={() => setIsOpen(false)}
-        >
-          Spark <span className="text-blue-500">Adriatic</span>
+        <Link href="/" onClick={() => setIsOpen(false)}>
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img
+            src="/logo-white-transparent.webp"
+            alt="Spark Adriatic"
+            className="h-10 w-auto"
+          />
         </Link>
 
         <ul className="hidden items-center gap-6 text-sm font-medium sm:flex">
@@ -33,8 +34,8 @@ export function Navbar() {
               <Link
                 href={link.href}
                 className={cn(
-                  "transition-colors hover:text-blue-500",
-                  pathname === link.href && "text-blue-500"
+                  "transition-colors hover:text-[#98D9EB]",
+                  pathname === link.href && "text-[#98D9EB]"
                 )}
               >
                 {link.label}
@@ -46,7 +47,7 @@ export function Navbar() {
         <div className="flex items-center gap-4">
           <Link
             href="/contact"
-            className="hidden rounded-md bg-blue-500 px-4 py-2 text-sm font-semibold text-white transition-colors hover:bg-blue-600 sm:block"
+            className="hidden rounded-md bg-[#98D9EB] px-4 py-2 text-sm font-semibold text-slate-900 transition-colors hover:bg-[#7fd4e8] sm:block"
           >
             Contact Us
           </Link>
@@ -95,8 +96,8 @@ export function Navbar() {
                   href={link.href}
                   onClick={() => setIsOpen(false)}
                   className={cn(
-                    "block transition-colors hover:text-blue-500",
-                    pathname === link.href && "text-blue-500"
+                    "block transition-colors hover:text-[#98D9EB]",
+                    pathname === link.href && "text-[#98D9EB]"
                   )}
                 >
                   {link.label}
@@ -107,7 +108,7 @@ export function Navbar() {
               <Link
                 href="/contact"
                 onClick={() => setIsOpen(false)}
-                className="inline-block rounded-md bg-blue-500 px-4 py-2 font-semibold text-white transition-colors hover:bg-blue-600"
+                className="inline-block rounded-md bg-[#98D9EB] px-4 py-2 font-semibold text-slate-900 transition-colors hover:bg-[#7fd4e8]"
               >
                 Contact Us
               </Link>

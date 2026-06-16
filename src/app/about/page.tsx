@@ -15,9 +15,9 @@ export default function AboutPage() {
         description="We're a team of developers, designers and problem-solvers based on the Adriatic coast, building technology for the hospitality industry."
       />
 
-      <section className="bg-slate-50">
-        <div className="mx-auto max-w-3xl px-6 py-20 text-center text-slate-600">
-          <h2 className="text-3xl font-bold tracking-tight text-slate-900">
+      <section className="bg-[#0b0f1e]">
+        <div className="mx-auto max-w-3xl px-6 py-20 text-center text-slate-400">
+          <h2 className="text-3xl font-bold tracking-tight text-white">
             Our Mission
           </h2>
           <p className="mt-4">

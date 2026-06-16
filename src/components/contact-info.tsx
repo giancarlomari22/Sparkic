@@ -6,30 +6,30 @@ const steps = [
 
 export function ContactInfo() {
   return (
-    <section className="bg-white">
+    <section className="bg-[#0b0f1e]">
       <div className="mx-auto max-w-6xl px-6 py-20">
         <div className="grid gap-12 lg:grid-cols-2 lg:items-start">
           <div>
-            <h2 className="text-3xl font-bold tracking-tight text-slate-900">
+            <h2 className="text-3xl font-bold tracking-tight text-white">
               Get in Touch
             </h2>
-            <p className="mt-4 text-slate-600">
+            <p className="mt-4 text-slate-400">
               Whether you have a specific project in mind or just want to
               explore what&apos;s possible, we&apos;d love to hear from you.
             </p>
           </div>
 
           <div>
-            <h3 className="font-semibold text-slate-900">
+            <h3 className="font-semibold text-white">
               What happens next?
             </h3>
             <ol className="mt-4 space-y-4">
               {steps.map((item) => (
                 <li key={item.step} className="flex gap-4">
-                  <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-blue-500 text-sm font-bold text-white">
+                  <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-[#98D9EB] text-sm font-bold text-slate-900">
                     {item.step}
                   </span>
-                  <p className="pt-1 text-slate-600">{item.text}</p>
+                  <p className="pt-1 text-slate-400">{item.text}</p>
                 </li>
               ))}
             </ol>
