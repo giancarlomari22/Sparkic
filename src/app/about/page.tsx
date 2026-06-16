@@ -3,9 +3,8 @@ import { PageHeader } from "@/components/page-header";
 import { ValuesSection } from "@/components/values-section";
 
 export const metadata: Metadata = {
-  title: "About Us | Spark Adriatic",
-  description:
-    "Learn more about Spark Adriatic and the team behind it.",
+  title: "About Us  Spark Adriatic",
+  description: "Learn more about Spark Adriatic and the team behind it.",
 };
 
 export default function AboutPage() {
@@ -23,10 +22,10 @@ export default function AboutPage() {
           </h2>
           <p className="mt-4">
             Spark Adriatic was founded with a simple idea: hospitality
-            businesses deserve software and hardware that actually fits the
-            way they work. Instead of forcing teams to adapt to generic
-            tools, we design custom solutions around real workflows — from
-            booking systems and dashboards to point-of-sale and beyond.
+            businesses deserve software and hardware that actually fits the way
+            they work. Instead of forcing teams to adapt to generic tools, we
+            design custom solutions around real workflows, from booking systems
+            and dashboards to point-of-sale and beyond.
           </p>
           <p className="mt-4">
             Our team combines creativity, technology and strategy to take

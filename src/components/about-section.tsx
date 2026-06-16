@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 
 export function AboutSection() {
@@ -21,7 +22,14 @@ export function AboutSection() {
           </Link>
         </div>
 
-        <div className="aspect-video w-full rounded-lg bg-slate-200" />
+        <div className="relative aspect-video w-full overflow-hidden rounded-lg">
+          <Image
+            src="/team_photo.webp"
+            alt="The Spark Adriatic team"
+            fill
+            className="object-cover"
+          />
+        </div>
       </div>
     </section>
   );
