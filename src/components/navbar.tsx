@@ -1,4 +1,8 @@
+"use client";
+
 import Link from "next/link";
+import { usePathname } from "next/navigation";
+import { cn } from "@/lib/utils";
 
 const navLinks = [
   { href: "/", label: "Home" },
@@ -8,6 +12,8 @@ const navLinks = [
 ];
 
 export function Navbar() {
+  const pathname = usePathname();
+
   return (
     <header className="bg-slate-900 text-white">
       <nav className="mx-auto flex max-w-6xl items-center justify-between gap-6 px-6 py-4">
@@ -20,7 +26,10 @@ export function Navbar() {
             <li key={link.href}>
               <Link
                 href={link.href}
-                className="transition-colors hover:text-blue-500"
+                className={cn(
+                  "transition-colors hover:text-blue-500",
+                  pathname === link.href && "text-blue-500"
+                )}
               >
                 {link.label}
               </Link>
