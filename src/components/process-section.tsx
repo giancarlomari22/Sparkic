@@ -27,22 +27,22 @@ const steps = [
 
 export function ProcessSection() {
   return (
-    <section className="bg-slate-50">
+    <section className="bg-[#0b0f1e]">
       <div className="mx-auto max-w-6xl px-6 py-20">
-        <h2 className="text-center text-3xl font-bold tracking-tight text-slate-900">
+        <h2 className="text-center text-3xl font-bold tracking-tight text-white">
           How We Work
         </h2>
 
         <div className="mt-12 grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-4">
           {steps.map((step) => (
             <div key={step.number}>
-              <span className="text-2xl font-bold text-blue-500">
+              <span className="text-2xl font-bold text-teal-400">
                 {step.number}
               </span>
-              <h3 className="mt-4 text-lg font-semibold text-slate-900">
+              <h3 className="mt-4 text-lg font-semibold text-white">
                 {step.title}
               </h3>
-              <p className="mt-2 text-sm text-slate-600">
+              <p className="mt-2 text-sm text-slate-400">
                 {step.description}
               </p>
             </div>

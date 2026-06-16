@@ -27,9 +27,9 @@ const features = [
 
 export function Features() {
   return (
-    <section className="bg-white">
+    <section className="bg-[#0b0f1e]">
       <div className="mx-auto max-w-6xl px-6 py-20">
-        <h2 className="text-center text-3xl font-bold tracking-tight text-slate-900">
+        <h2 className="text-center text-3xl font-bold tracking-tight text-white">
           What We Do
         </h2>
 
@@ -37,15 +37,15 @@ export function Features() {
           {features.map((feature) => (
             <div
               key={feature.number}
-              className="rounded-lg border border-slate-200 p-6"
+              className="rounded-lg border border-slate-700 p-6"
             >
-              <span className="text-2xl font-bold text-blue-500">
+              <span className="text-2xl font-bold text-teal-400">
                 {feature.number}
               </span>
-              <h3 className="mt-4 text-lg font-semibold text-slate-900">
+              <h3 className="mt-4 text-lg font-semibold text-white">
                 {feature.title}
               </h3>
-              <p className="mt-2 text-sm text-slate-600">
+              <p className="mt-2 text-sm text-slate-400">
                 {feature.description}
               </p>
             </div>

@@ -18,9 +18,9 @@ const values = [
 
 export function ValuesSection() {
   return (
-    <section className="bg-white">
+    <section className="bg-[#0b0f1e]">
       <div className="mx-auto max-w-6xl px-6 py-20">
-        <h2 className="text-center text-3xl font-bold tracking-tight text-slate-900">
+        <h2 className="text-center text-3xl font-bold tracking-tight text-white">
           Our Values
         </h2>
 
@@ -28,12 +28,12 @@ export function ValuesSection() {
           {values.map((value) => (
             <div
               key={value.title}
-              className="rounded-lg border border-slate-200 p-6"
+              className="rounded-lg border border-slate-700 p-6"
             >
-              <h3 className="text-lg font-semibold text-slate-900">
+              <h3 className="text-lg font-semibold text-white">
                 {value.title}
               </h3>
-              <p className="mt-2 text-sm text-slate-600">{value.description}</p>
+              <p className="mt-2 text-sm text-slate-400">{value.description}</p>
             </div>
           ))}
         </div>
