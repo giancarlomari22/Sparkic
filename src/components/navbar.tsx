@@ -1,5 +1,6 @@
 "use client";
 
+import { useState } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { cn } from "@/lib/utils";
@@ -13,11 +14,16 @@ const navLinks = [
 
 export function Navbar() {
   const pathname = usePathname();
+  const [isOpen, setIsOpen] = useState(false);
 
   return (
     <header className="bg-slate-900 text-white">
       <nav className="mx-auto flex max-w-6xl items-center justify-between gap-6 px-6 py-4">
-        <Link href="/" className="text-xl font-bold">
+        <Link
+          href="/"
+          className="text-xl font-bold"
+          onClick={() => setIsOpen(false)}
+        >
           Spark <span className="text-blue-500">Adriatic</span>
         </Link>
 
@@ -37,13 +43,78 @@ export function Navbar() {
           ))}
         </ul>
 
-        <Link
-          href="/contact"
-          className="rounded-md bg-blue-500 px-4 py-2 text-sm font-semibold text-white transition-colors hover:bg-blue-600"
-        >
-          Contact Us
-        </Link>
+        <div className="flex items-center gap-4">
+          <Link
+            href="/contact"
+            className="hidden rounded-md bg-blue-500 px-4 py-2 text-sm font-semibold text-white transition-colors hover:bg-blue-600 sm:block"
+          >
+            Contact Us
+          </Link>
+
+          <button
+            onClick={() => setIsOpen(!isOpen)}
+            className="text-white sm:hidden"
+            aria-label="Toggle menu"
+          >
+            {isOpen ? (
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2"
+              >
+                <line x1="18" y1="6" x2="6" y2="18" />
+                <line x1="6" y1="6" x2="18" y2="18" />
+              </svg>
+            ) : (
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2"
+              >
+                <line x1="3" y1="6" x2="21" y2="6" />
+                <line x1="3" y1="12" x2="21" y2="12" />
+                <line x1="3" y1="18" x2="21" y2="18" />
+              </svg>
+            )}
+          </button>
+        </div>
       </nav>
+
+      {isOpen && (
+        <div className="border-t border-slate-700 px-6 py-4 sm:hidden">
+          <ul className="flex flex-col gap-4 text-sm font-medium">
+            {navLinks.map((link) => (
+              <li key={link.href}>
+                <Link
+                  href={link.href}
+                  onClick={() => setIsOpen(false)}
+                  className={cn(
+                    "block transition-colors hover:text-blue-500",
+                    pathname === link.href && "text-blue-500"
+                  )}
+                >
+                  {link.label}
+                </Link>
+              </li>
+            ))}
+            <li>
+              <Link
+                href="/contact"
+                onClick={() => setIsOpen(false)}
+                className="inline-block rounded-md bg-blue-500 px-4 py-2 font-semibold text-white transition-colors hover:bg-blue-600"
+              >
+                Contact Us
+              </Link>
+            </li>
+          </ul>
+        </div>
+      )}
     </header>
   );
 }
