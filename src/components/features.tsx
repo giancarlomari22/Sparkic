@@ -1,27 +1,27 @@
 const features = [
   {
     number: "01",
-    title: "Custom-Built Solutions",
+    title: "Restaurant-First Thinking",
     description:
-      "Every solution is designed and built around your business, not a one-size-fits-all template.",
+      "Everything we build is designed for the speed, volume and complexity of real restaurant operations, not adapted from generic software.",
   },
   {
     number: "02",
-    title: "End-to-End Service",
+    title: "Full Stack Delivery",
     description:
-      "From concept to launch, we handle design, development and deployment — all in one place.",
+      "From mobile ordering apps and POS systems to cloud infrastructure and analytics, we own and maintain the entire technology stack.",
   },
   {
     number: "03",
-    title: "Proven Results",
+    title: "Proven at Scale",
     description:
-      "Trusted by hospitality brands across Europe to deliver software and hardware that works.",
+      "Our systems power daily operations for Dickey's Barbecue Pit across hundreds of locations throughout the United States.",
   },
   {
     number: "04",
-    title: "Innovative Approach",
+    title: "Built to Last",
     description:
-      "We combine creativity, technology and strategy to solve real problems in the hospitality industry.",
+      "We don't hand off and disappear. We stay involved after launch to support, monitor and continuously improve what we build.",
   },
 ];
 
