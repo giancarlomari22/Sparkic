@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { PageHeader } from "@/components/page-header";
+import { WhatWeBuild } from "@/components/what-we-build";
 import { ValuesSection } from "@/components/values-section";
 
 export const metadata: Metadata = {
@@ -23,20 +24,21 @@ export default function AboutPage() {
           <p className="mt-4">
             Spark Adriatic is a software development and technology company
             specializing in digital tools for the restaurant and hospitality
-            industry. We serve as the primary technology partner for Dickey&apos;s
-            Barbecue Pit, one of the largest barbecue chains in the United
-            States, building and maintaining the systems that power their
-            day-to-day operations across hundreds of locations.
+            industry. We serve as the primary technology partner for
+            Dickey&apos;s Barbecue Pit, one of the largest barbecue chains in
+            the United States, building and maintaining the systems that power
+            their day-to-day operations across hundreds of locations.
           </p>
           <p className="mt-4">
             From mobile ordering apps and loyalty programs to kitchen display
-            systems and cloud infrastructure, we own the full technology stack
-            — designing, building and supporting everything in-house so our
+            systems and cloud infrastructure, we own the full technology stack,
+            designing, building and supporting everything in-house so our
             clients can focus on what they do best.
           </p>
         </div>
       </section>
 
+      <WhatWeBuild />
       <ValuesSection />
     </>
   );
