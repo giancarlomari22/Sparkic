@@ -12,25 +12,27 @@ export default function AboutPage() {
     <>
       <PageHeader
         title="About Us"
-        description="We're a team of developers, designers and problem-solvers based on the Adriatic coast, building technology for the hospitality industry."
+        description="We build the technology that keeps modern restaurants running — from the app guests order on to the dashboards managers rely on every day."
       />
 
       <section className="bg-[#0b0f1e]">
         <div className="mx-auto max-w-3xl px-6 py-20 text-center text-slate-400">
           <h2 className="text-3xl font-bold tracking-tight text-white">
-            Our Mission
+            Who We Are
           </h2>
           <p className="mt-4">
-            Spark Adriatic was founded with a simple idea: hospitality
-            businesses deserve software and hardware that actually fits the way
-            they work. Instead of forcing teams to adapt to generic tools, we
-            design custom solutions around real workflows, from booking systems
-            and dashboards to point-of-sale and beyond.
+            Spark Adriatic is a software development and technology company
+            specializing in digital tools for the restaurant and hospitality
+            industry. We serve as the primary technology partner for Dickey&apos;s
+            Barbecue Pit, one of the largest barbecue chains in the United
+            States, building and maintaining the systems that power their
+            day-to-day operations across hundreds of locations.
           </p>
           <p className="mt-4">
-            Our team combines creativity, technology and strategy to take
-            projects from a first conversation all the way to a finished
-            product, and we stay involved long after launch.
+            From mobile ordering apps and loyalty programs to kitchen display
+            systems and cloud infrastructure, we own the full technology stack
+            — designing, building and supporting everything in-house so our
+            clients can focus on what they do best.
           </p>
         </div>
       </section>
