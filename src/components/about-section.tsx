@@ -10,9 +10,11 @@ export function AboutSection() {
             About Us
           </h2>
           <p className="mt-4 text-slate-400">
-            We&apos;re a team of developers, designers and problem-solvers
-            based on the Adriatic coast, focused on bringing innovation to
-            the hospitality industry through technology.
+            Spark Adriatic is a software development company specializing in
+            technology for the restaurant and hospitality industry. We serve
+            as the primary tech partner for Dickey&apos;s Barbecue Pit, building
+            and maintaining the full stack of systems that keep their
+            locations running every day.
           </p>
           <Link
             href="/about"
