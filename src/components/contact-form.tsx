@@ -8,8 +8,9 @@ type FieldErrors = Partial<Record<keyof ContactSchema, string>>;
 
 export function ContactForm() {
   const [errors, setErrors] = useState<FieldErrors>({});
+  const [isLoading, setIsLoading] = useState(false);
 
-  function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
+  async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
 
     const formData = new FormData(e.currentTarget);
@@ -33,9 +34,17 @@ export function ContactForm() {
       return;
     }
 
-    e.currentTarget.reset();
-    setErrors({});
-    toast.success("Message sent! We'll get back to you within 48 hours.");
+    const form = e.currentTarget;
+    setIsLoading(true);
+    try {
+      await new Promise((resolve) => setTimeout(resolve, 1000));
+      console.log("Contact form submitted:", parsed.data);
+      form.reset();
+      setErrors({});
+      toast.success("Message sent! We'll get back to you within 48 hours.");
+    } finally {
+      setIsLoading(false);
+    }
   }
 
   return (
@@ -105,9 +114,10 @@ export function ContactForm() {
 
           <button
             type="submit"
-            className="w-full rounded-md bg-[#98D9EB] py-3 text-base font-semibold text-slate-900 transition-colors hover:bg-[#7fd4e8]"
+            disabled={isLoading}
+            className="w-full rounded-md bg-[#98D9EB] py-3 text-base font-semibold text-slate-900 transition-colors hover:bg-[#7fd4e8] disabled:cursor-not-allowed disabled:opacity-60"
           >
-            Send Message
+            {isLoading ? "Sending..." : "Send Message"}
           </button>
         </form>
       </div>

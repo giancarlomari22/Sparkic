@@ -1,18 +1,18 @@
 const values = [
   {
-    title: "Innovation First",
+    title: "Built for Hospitality",
     description:
-      "We stay on top of new technology so our clients don't have to, and apply it where it actually helps.",
+      "We don't build generic software. Everything we create is designed around the real workflows of restaurants and hospitality businesses, because we've spent years learning how they actually operate.",
   },
   {
-    title: "Built Around You",
+    title: "Full Stack Ownership",
     description:
-      "No off-the-shelf templates. Every project starts with understanding how your business actually works.",
+      "From the guest-facing app to the cloud backend, we own and maintain every layer of the technology stack. One team, full accountability.",
   },
   {
-    title: "Long-Term Partners",
+    title: "Always On",
     description:
-      "We don't disappear after launch. We stick around to support, maintain and improve what we build.",
+      "Restaurants don't stop at 5pm. We build reliable systems that handle the pressure of peak service and stay available when our clients need us most.",
   },
 ];
 
