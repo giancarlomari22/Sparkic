@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import { toast } from "sonner";
-import { contactSchema, type ContactSchema } from "@/app/types";
+import { contactSchema, type ContactSchema } from "@/types";
 
 type FieldErrors = Partial<Record<keyof ContactSchema, string>>;
 
