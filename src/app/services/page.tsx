@@ -14,7 +14,7 @@ export default function ServicesPage() {
     <>
       <PageHeader
         title="Services"
-        description="From custom software to hardware integrations, we build solutions for every part of your hospitality business."
+        description="From mobile ordering apps and POS systems to data analytics and cloud infrastructure, we build the technology that powers modern restaurant operations."
       />
 
       <ServicesList />
