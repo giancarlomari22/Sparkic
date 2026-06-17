@@ -12,8 +12,9 @@ type Props = {
 
 export function JobApplicationForm({ showGithub }: Props) {
   const [errors, setErrors] = useState<FieldErrors>({});
+  const [isLoading, setIsLoading] = useState(false);
 
-  function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
+  async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
 
     const formData = new FormData(e.currentTarget);
@@ -38,9 +39,17 @@ export function JobApplicationForm({ showGithub }: Props) {
       return;
     }
 
-    e.currentTarget.reset();
-    setErrors({});
-    toast.success("Application sent! We'll be in touch within a few days.");
+    const form = e.currentTarget;
+    setIsLoading(true);
+    try {
+      await new Promise((resolve) => setTimeout(resolve, 1000));
+      console.log("Job application submitted:", parsed.data);
+      form.reset();
+      setErrors({});
+      toast.success("Application sent! We'll be in touch within a few days.");
+    } finally {
+      setIsLoading(false);
+    }
   }
 
   const inputClass =
@@ -159,9 +168,10 @@ export function JobApplicationForm({ showGithub }: Props) {
 
           <button
             type="submit"
-            className="w-full rounded-md bg-[#98D9EB] py-3 text-base font-semibold text-slate-900 transition-colors hover:bg-[#7fd4e8]"
+            disabled={isLoading}
+            className="w-full rounded-md bg-[#98D9EB] py-3 text-base font-semibold text-slate-900 transition-colors hover:bg-[#7fd4e8] disabled:cursor-not-allowed disabled:opacity-60"
           >
-            Apply Now
+            {isLoading ? "Sending..." : "Apply Now"}
           </button>
         </form>
       </div>
