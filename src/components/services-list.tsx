@@ -1,33 +1,33 @@
 const services = [
   {
-    title: "Custom Software Development",
+    title: "Mobile Ordering Apps",
     description:
-      "Web apps, dashboards and internal tools built specifically for your business processes.",
+      "Guest-facing mobile applications for browsing menus, placing orders and tracking delivery, built for speed and reliability at scale.",
+  },
+  {
+    title: "E-Commerce & Online Ordering",
+    description:
+      "End-to-end online ordering infrastructure for pickup and delivery, integrated directly with your POS and kitchen systems.",
+  },
+  {
+    title: "Loyalty Programs & Rewards",
+    description:
+      "Custom reward systems and digital coupon workflows that drive repeat visits and keep guests coming back.",
   },
   {
     title: "Point of Sale Systems",
     description:
-      "Modern POS solutions that fit the way your staff actually work, from the counter to the kitchen.",
+      "Custom POS software built around how your staff actually work, handling in-store transactions across single and multi-location operations.",
   },
   {
-    title: "Booking & Reservation Systems",
+    title: "Kitchen Display Systems",
     description:
-      "Online booking flows that reduce no-shows and make life easier for your front desk.",
+      "Order routing software that sends tickets directly to kitchen monitors, reducing errors and keeping the line moving during peak service.",
   },
   {
-    title: "Digital Menus & Kiosks",
+    title: "Data Analytics & Dashboards",
     description:
-      "Self-service screens and digital menus that speed up service and reduce errors.",
-  },
-  {
-    title: "Hardware Integration",
-    description:
-      "We connect your software with the devices you already use — printers, scanners, payment terminals and more.",
-  },
-  {
-    title: "Maintenance & Support",
-    description:
-      "Ongoing updates, monitoring and support after launch, so things keep running smoothly.",
+      "Real-time dashboards that track sales, labor metrics, peak hours and inventory so managers always have the full picture.",
   },
 ];
 
