@@ -3,25 +3,25 @@ const steps = [
     number: "01",
     title: "Discovery",
     description:
-      "We start by understanding your business, your workflows and the problem you're trying to solve.",
+      "We talk to your operations team and map the full flow, from the moment a guest orders to the moment food leaves the kitchen. No assumptions.",
   },
   {
     number: "02",
     title: "Design",
     description:
-      "We design an interface and experience that fits how your team actually works.",
+      "We design around real workflows, not ideal ones. Every screen and interaction is built for the speed and pressure of an actual shift.",
   },
   {
     number: "03",
     title: "Development",
     description:
-      "We build, test and refine the solution using modern, reliable technology.",
+      "We build and test in conditions that reflect real restaurant environments, high volume, parallel orders and the unexpected.",
   },
   {
     number: "04",
     title: "Launch & Support",
     description:
-      "We deploy the solution and stay involved to support and improve it over time.",
+      "We deploy and stay on. Restaurants run around the clock and so do we, with monitoring and support whenever something needs attention.",
   },
 ];
 
